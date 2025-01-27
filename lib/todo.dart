@@ -10,16 +10,7 @@ class MyTodoList extends StatelessWidget {
       children: [
         Column(
           children: [
-            ListView(
-              children: [
-                Row(
-                  children: [
-                    Checkbox(value: false, onChanged: (_) {}),
-                    const Text("Flutter todo app")
-                  ],
-                )
-              ],
-            ),
+          SizedBox(height: 500, child: Text("hej"),),
             ElevatedButton(onPressed: () {}, child: const Text("+"))
           ],
         ),

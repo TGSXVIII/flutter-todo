@@ -21,10 +21,19 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyLoginPage extends StatelessWidget {
+class MyLoginPage extends StatefulWidget {
   const MyLoginPage({super.key});
 
+
+  
   @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
+class MyLoginPageState extends State<MyLoginPage> {
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -47,8 +56,14 @@ class MyLoginPage extends StatelessWidget {
       ),
     );
   }
+  
 }
-
+bool checkLogin(String username, String password){
+  if(username == "theis2" && password == "taisErDårligt6!"){
+    return true;
+  }
+  return false;
+}
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
